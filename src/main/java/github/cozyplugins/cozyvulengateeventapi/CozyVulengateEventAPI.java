@@ -5,6 +5,7 @@ import com.github.smuddgge.squishydatabase.DatabaseCredentials;
 import com.github.smuddgge.squishydatabase.DatabaseFactory;
 import com.github.smuddgge.squishydatabase.interfaces.Database;
 import github.cozyplugins.cozyvulengateeventapi.api.general.PlayerTable;
+import github.cozyplugins.cozyvulengateeventapi.api.towerdefence.table.TowerDefenceGameTable;
 import org.jetbrains.annotations.Nullable;
 
 /**
@@ -36,6 +37,7 @@ public final class CozyVulengateEventAPI extends CozyPlugin {
 
         // Add records.
         database.createTable(new PlayerTable());
+        database.createTable(new TowerDefenceGameTable());
 
         // Listen to events.
         this.getServer().getPluginManager().registerEvents(new PlayerListener(), this);
