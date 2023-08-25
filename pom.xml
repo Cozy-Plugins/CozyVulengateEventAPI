@@ -25,6 +25,12 @@
             <id>sonatype</id>
             <url>https://oss.sonatype.org/content/groups/public/</url>
         </repository>
+
+        <!-- Jit Pack -->
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
     </repositories>
 
     <dependencies>
@@ -33,6 +39,20 @@
             <artifactId>spigot-api</artifactId>
             <version>1.20.1-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
+        </dependency>
+
+        <!-- Cozy Library -->
+        <dependency>
+            <groupId>com.github.Cozy-Plugins</groupId>
+            <artifactId>CozyLibrary</artifactId>
+            <version>1.1.8</version>
+        </dependency>
+
+        <!-- Database -->
+        <dependency>
+            <groupId>com.github.smuddgge</groupId>
+            <artifactId>SquishyDatabase</artifactId>
+            <version>3.0.1</version>
         </dependency>
     </dependencies>
 

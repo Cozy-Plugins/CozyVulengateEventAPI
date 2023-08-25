@@ -1,0 +1,5 @@
+# Database Connection.
+# Removed by default to stop unwanted connections.
+
+connection_string: "connectionString"
+database_same: "Database"
