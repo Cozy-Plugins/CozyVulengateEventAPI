@@ -68,6 +68,7 @@ public class TowerDefenceGameRecord extends Record {
      * @return The list of player names.
      */
     public @NotNull List<String> getPlayerNameList() {
+        if (playerList == null) return new ArrayList<>();
         return new ArrayList<>(Arrays.asList(playerList.split(",")));
     }
 
