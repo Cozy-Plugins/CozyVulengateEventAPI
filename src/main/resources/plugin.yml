@@ -1,0 +1,4 @@
+name: CozyVulengateEventAPI
+version: '${project.version}'
+main: github.cozyplugins.cozyvulengateeventapi.cozyvulengateeventapi.CozyVulengateEventAPI
+api-version: '1.20'
