@@ -1,6 +1,6 @@
-package github.cozyplugins.cozyvulengateeventapi.towerdefence;
+package github.cozyplugins.cozyvulengateeventapi.api.towerdefence;
 
-import github.cozyplugins.cozyvulengateeventapi.towerdefence.record.TowerDefenceGameRecord;
+import github.cozyplugins.cozyvulengateeventapi.api.towerdefence.record.TowerDefenceGameRecord;
 
 import java.util.Comparator;
 

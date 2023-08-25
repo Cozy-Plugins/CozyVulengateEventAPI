@@ -1,4 +1,4 @@
-package github.cozyplugins.cozyvulengateeventapi.general;
+package github.cozyplugins.cozyvulengateeventapi.api.general;
 
 import com.github.cozyplugins.cozylibrary.user.PlayerUser;
 import com.github.smuddgge.squishydatabase.Query;

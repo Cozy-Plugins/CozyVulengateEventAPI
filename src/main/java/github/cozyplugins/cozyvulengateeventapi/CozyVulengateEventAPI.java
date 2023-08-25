@@ -4,7 +4,7 @@ import com.github.cozyplugins.cozylibrary.CozyPlugin;
 import com.github.smuddgge.squishydatabase.DatabaseCredentials;
 import com.github.smuddgge.squishydatabase.DatabaseFactory;
 import com.github.smuddgge.squishydatabase.interfaces.Database;
-import github.cozyplugins.cozyvulengateeventapi.general.PlayerTable;
+import github.cozyplugins.cozyvulengateeventapi.api.general.PlayerTable;
 import org.jetbrains.annotations.Nullable;
 
 /**
@@ -46,7 +46,7 @@ public final class CozyVulengateEventAPI extends CozyPlugin {
      *
      * @return The instance of the database.
      */
-    public static @Nullable Database getDatabase() {
+    public @Nullable Database getDatabase() {
         return CozyVulengateEventAPI.database;
     }
 }

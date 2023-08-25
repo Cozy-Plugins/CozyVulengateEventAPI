@@ -1,4 +1,4 @@
-package github.cozyplugins.cozyvulengateeventapi.general;
+package github.cozyplugins.cozyvulengateeventapi.api.general;
 
 import com.github.smuddgge.squishydatabase.record.Record;
 import com.github.smuddgge.squishydatabase.record.RecordFieldAnnotation;

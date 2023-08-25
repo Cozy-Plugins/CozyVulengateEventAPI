@@ -1,12 +1,12 @@
-package github.cozyplugins.cozyvulengateeventapi.towerdefence.record;
+package github.cozyplugins.cozyvulengateeventapi.api.towerdefence.record;
 
 import com.github.smuddgge.squishydatabase.interfaces.Database;
 import com.github.smuddgge.squishydatabase.record.Record;
 import com.github.smuddgge.squishydatabase.record.RecordFieldAnnotation;
 import com.github.smuddgge.squishydatabase.record.RecordFieldType;
-import github.cozyplugins.cozyvulengateeventapi.CozyVulengateEventAPI;
-import github.cozyplugins.cozyvulengateeventapi.general.PlayerRecord;
-import github.cozyplugins.cozyvulengateeventapi.general.PlayerTable;
+import github.cozyplugins.cozyvulengateeventapi.api.VulengateEventsAPI;
+import github.cozyplugins.cozyvulengateeventapi.api.general.PlayerRecord;
+import github.cozyplugins.cozyvulengateeventapi.api.general.PlayerTable;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -77,7 +77,7 @@ public class TowerDefenceGameRecord extends Record {
      * @return The list of players as player records.
      */
     public @NotNull List<@Nullable PlayerRecord> getPlayerRecordList() {
-        Database database = CozyVulengateEventAPI.getDatabase();
+        Database database = VulengateEventsAPI.getDatabase();
         if (database == null) return new ArrayList<>();
 
         // Get the player table.

@@ -1,9 +1,9 @@
-package github.cozyplugins.cozyvulengateeventapi.towerdefence.table;
+package github.cozyplugins.cozyvulengateeventapi.api.towerdefence.table;
 
 import com.github.smuddgge.squishydatabase.Query;
 import com.github.smuddgge.squishydatabase.interfaces.TableAdapter;
-import github.cozyplugins.cozyvulengateeventapi.Leaderboard;
-import github.cozyplugins.cozyvulengateeventapi.towerdefence.record.TowerDefenceGameRecord;
+import github.cozyplugins.cozyvulengateeventapi.api.Leaderboard;
+import github.cozyplugins.cozyvulengateeventapi.api.towerdefence.record.TowerDefenceGameRecord;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
