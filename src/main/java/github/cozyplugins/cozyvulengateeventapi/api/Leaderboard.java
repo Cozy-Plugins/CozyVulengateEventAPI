@@ -1,5 +1,6 @@
 package github.cozyplugins.cozyvulengateeventapi.api;
 
+import github.cozyplugins.cozyvulengateeventapi.api.towerdefence.record.TowerDefenceGameRecord;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -26,7 +27,7 @@ public class Leaderboard<T> {
         this.comparator = (o1, o2) -> 0;
 
         // Create a default format.
-        this.format = new Format<T>() {
+        this.format = new Format<>() {
             @Override
             public @NotNull String getFormat(@NotNull T object, int rank) {
                 return rank + ") " + object;
@@ -50,6 +51,19 @@ public class Leaderboard<T> {
          * @return The line to add to the leaderboard.
          */
         @NotNull String getFormat(@NotNull T object, int rank);
+    }
+
+    /**
+     * Used to get the list ordered.
+     *
+     * @return The list ordered.
+     */
+    public @NotNull List<T> getOrdered() {
+        // Sort list.
+        this.list.sort(this.comparator);
+
+        // Return list.
+        return this.list;
     }
 
     /**
