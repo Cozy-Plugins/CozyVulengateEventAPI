@@ -21,8 +21,6 @@ public final class Config {
      * Used to create the default configuration file.
      * If it was created this method will return true.
      * If the file already exists it will not create the file.
-     *
-     * @return True if the file was created.
      */
     private static void createDefault() {
         File file = new File(CozyPlugin.getPlugin().getDataFolder(), "config.yml");
