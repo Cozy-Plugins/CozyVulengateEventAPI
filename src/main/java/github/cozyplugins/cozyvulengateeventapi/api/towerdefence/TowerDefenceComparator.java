@@ -38,6 +38,16 @@ public final class TowerDefenceComparator {
      * @return The comparator for game base health.
      */
     public static Comparator<TowerDefenceGameRecord> getHealthComparator() {
-        return Comparator.comparingInt(o -> o.baseHealth);
+        return (o1, o2) -> {
+            int baseHealth1 = o1.baseHealth;
+            int baseHealth2 = o2.baseHealth;
+
+            // Compare health.
+            int result = Integer.compare(baseHealth1, baseHealth2);
+
+            // If the same compare time.
+            if (result == 0) return getTimeComparator().compare(o1, o2);
+            return result;
+        };
     }
 }
