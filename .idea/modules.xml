@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/CozyVulengateEventAPI.iml" filepath="$PROJECT_DIR$/CozyVulengateEventAPI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AMain_CozyVulengateEventAPI.iml" filepath="$PROJECT_DIR$/AMain_CozyVulengateEventAPI.iml" />
     </modules>
   </component>
 </project>

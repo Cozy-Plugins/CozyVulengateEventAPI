@@ -3,6 +3,7 @@ package github.cozyplugins.cozyvulengateeventapi.api.general;
 import com.github.cozyplugins.cozylibrary.user.PlayerUser;
 import com.github.smuddgge.squishydatabase.Query;
 import com.github.smuddgge.squishydatabase.interfaces.TableAdapter;
+import github.cozyplugins.cozyvulengateeventapi.utility.PlayerUtility;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -59,11 +60,14 @@ public class PlayerTable extends TableAdapter<PlayerRecord> {
                 new Query().match("uuid", user.getUuid().toString())
         );
 
+        String color = PlayerUtility.getPlayerColour(user);
+
         // Check if the player record does not exist.
         if (result == null) {
             PlayerRecord playerRecord = new PlayerRecord();
             playerRecord.uuid = user.getUuid().toString();
             playerRecord.name = user.getName();
+            if (color != null) playerRecord.color = color;
 
             this.insertRecord(playerRecord);
             return playerRecord;
@@ -72,6 +76,12 @@ public class PlayerTable extends TableAdapter<PlayerRecord> {
         // Check if the player has changed their name.
         if (!Objects.equals(result.name, user.getName())) {
             result.name = user.getName();
+            this.insertRecord(result);
+        }
+
+        // Check if the color has changed.
+        if (!Objects.equals(result.color, color)) {
+            if (color != null) result.color = color;
             this.insertRecord(result);
         }
 

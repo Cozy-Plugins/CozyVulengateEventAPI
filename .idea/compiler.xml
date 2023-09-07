@@ -6,8 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="CozyVulengateEventAPI" />
+        <module name="AMain_CozyVulengateEventAPI" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="CozyVulengateEventAPI" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>
